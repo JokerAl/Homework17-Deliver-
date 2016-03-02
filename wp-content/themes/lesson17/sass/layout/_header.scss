@@ -1,0 +1,93 @@
+.h-page {
+  position: relative;
+  h1 {
+    display: inline-block;
+    margin: 25px 0;
+  }
+  .crafty-social-buttons {
+    float: right;
+    margin: 30px 50px 25px 0;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .hamburger, .cross {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    padding: 0 25px;
+    color: #87b672;
+    z-index: 99999;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+  }
+  .hamburger {
+    line-height: 45px;
+    font-size: 1.5rem;
+  }
+  .cross {
+    font-size: 3rem;
+    height: 45px
+  }
+  .top-nav {
+    .menu-primary-menu-container {
+      z-index: 999;
+      font-family: 'NovecentoSans';
+      font-weight: bold;
+      font-size: 0.8em;
+      width: 80%;
+      background: #7c8ca0;
+      position: absolute;
+      top: 94px;
+      float: left;
+
+      li {
+        border-bottom: #1d1f20 1px solid;
+        text-align: center;
+        &:hover {
+          background: #181818;
+
+        }
+        a {
+          display: block;
+          padding: 15vh 0 15vh 0;
+          width: 100%;
+          height: 100%;
+          margin: 0 !important;
+          color: $main-link-color;
+          font-size: (18/16)*1rem;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          &:hover {
+            color: $link_hover-color;
+          }
+        }
+      }
+
+    }
+
+    form {
+      float: right;
+      padding: 10px;
+      .fa-search{
+        cursor: pointer;
+      }
+      #search-input {
+        display: none;
+        border: 1px solid gray;
+        padding: 8px;
+        margin-top: -8px;
+        margin-bottom: -8px;
+        margin-left: 8px;
+        width: 150px;
+        text-align: center;
+        line-height: 1;
+      }
+    }
+
+  }
+}

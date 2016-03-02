@@ -1,0 +1,229 @@
+//.h-page {
+//  background-color: #fefefe;
+//  box-shadow: inset 0 -6px 0 #1e1e1e;
+//  position: relative;
+//  .title-head {
+//    overflow: hidden;
+//    h1 {
+//      float: left;
+//      width: 200px;
+//      font-size: (40/16)*1rem;
+//      margin: 25px 0;
+//      a {
+//        font-family: 'Pacifico', cursive;
+//        color: #666262;
+//      }
+//    }
+//
+//      border-bottom: #ccc;
+//      width: 100%;
+//
+//
+//  }
+//  .hamburger, .cross {
+//    position: absolute;
+//    top: 50%;
+//    transform: translateY(-50%);
+//    right: 0;
+//    padding: 0 25px;
+//    color: #58c93a;
+//    z-index: 99999;
+//    background: none;
+//    border: none;
+//    outline: none;
+//    font-weight: bold;
+//  }
+//  .hamburger {
+//    line-height: 45px;
+//    font-size: 1.5rem;
+//  }
+//  .cross {
+//    font-size: 3rem;
+//    height: 45px
+//  }
+//  .menu-primary-menu-links-container {
+//    z-index: 999;
+//    font-weight: bold;
+//    font-size: 0.8em;
+//    width: 100%;
+//    background: #131313;
+//    position: absolute;
+//    top: 94px;
+//    margin-left: -15px;
+//
+//    li {
+//      border-bottom: #1d1f20 1px solid;
+//      text-align: center;
+//      &:hover {
+//        background: #181818;
+//
+//      }
+//      a {
+//        display: block;
+//        padding: 15px 0 15px 0;
+//        height: 100%;
+//        margin: 0 !important;
+//        color: #fff;
+//        &:hover {
+//          color: #58c93a;
+//        }
+//      }
+//    }
+//  }
+//
+//}
+.h-page {
+
+  .row {
+    padding: 32px 0;
+    border-bottom: 1px solid gray;
+
+
+  }
+
+  .logo {
+    float: left;
+    font-family: 'Pacifico';
+    font-size: 40px;
+    line-height: 18px;
+    padding: 8px 0;
+  }
+
+  .menu-toggle {
+    width: 68px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    // margin-left: -webkit-calc(100% - 24px);
+    // margin-left: -moz-calc(100% - 24px);
+    // margin-left: calc(100% - 24px);
+
+    div {
+      width: 100%;
+      height: 5px;
+      background: gray;
+      border-radius: 4px;
+      margin: 4px auto;
+      transition: all 0.3s;
+      backface-visibility: hidden;
+    }
+
+    &.on .one {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &.on .two {
+      opacity: 0;
+    }
+
+    &.on .three {
+      transform: rotate(-45deg) translate(7px, -8px);
+    }
+  }
+
+  .follow-links {
+    float: right;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      text-align: center;
+      padding-top: 8px;
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: #d4d4d4;
+      color: #ffffff;
+
+      &:hover,
+      &:focus {
+        color: gray;
+      }
+    }
+  }
+  nav {
+
+    ul {
+      display: inline-block;
+      float: left;
+
+
+    }
+
+    .menu-item {
+      display: inline-block;
+      padding: 30px 0 30px 0;
+      text-align: center;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: 'novecento_sans_widedemibold';
+      line-height: 1;
+      padding-right: 30px;
+
+      a {
+        color: gray;
+
+        &:hover,
+        &:focus {
+          color:  #87b672;
+        }
+      }
+    }
+
+    .current-menu-item a {
+      color:  #87b672;
+      cursor: default;
+    }
+
+    .icon-search {
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        color:  #87b672;
+      }
+    }
+
+    .search-input {
+      display: inline-block;
+      float: right;
+      font-size: 18px;
+      padding: 30px 0 30px 0;
+      line-height: 1;
+
+      input {
+        display: none;
+        float: right;
+        border: 1px solid gray;
+        padding: 8px;
+        margin-top: -8px;
+        margin-bottom: -8px;
+        margin-left: 8px;
+        width: 150px;
+        text-align: center;
+        line-height: 1;
+
+        &:focus::-webkit-input-placeholder {
+          color: transparent;
+          transition: all 0.5s linear;
+        }
+
+        &:focus::-moz-placeholder {
+          color: transparent;
+          transition: all 0.5s linear;
+        }
+
+        &:focus:-ms-input-placeholder {
+          color: transparent;
+          transition: all 0.5s linear;
+        }
+      }
+    }
+
+
+  }
+}
